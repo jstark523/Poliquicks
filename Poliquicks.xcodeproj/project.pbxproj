@@ -14,6 +14,8 @@
 		96606D402988DF650045362C /* PoliquicksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D3F2988DF650045362C /* PoliquicksTests.swift */; };
 		96606D4A2988DF650045362C /* PoliquicksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D492988DF650045362C /* PoliquicksUITests.swift */; };
 		96606D4C2988DF650045362C /* PoliquicksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D4B2988DF650045362C /* PoliquicksUITestsLaunchTests.swift */; };
+		96BD63732988E442000CFCF7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD63722988E442000CFCF7 /* LoginView.swift */; };
+		96BD63752988E541000CFCF7 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96BD63742988E541000CFCF7 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		96606D452988DF650045362C /* PoliquicksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoliquicksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96606D492988DF650045362C /* PoliquicksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliquicksUITests.swift; sourceTree = "<group>"; };
 		96606D4B2988DF650045362C /* PoliquicksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliquicksUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		96BD63712988E35E000CFCF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		96BD63722988E442000CFCF7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		96BD63742988E541000CFCF7 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +80,7 @@
 		96606D212988DF630045362C = {
 			isa = PBXGroup;
 			children = (
+				96BD63742988E541000CFCF7 /* Launch Screen.storyboard */,
 				96606D2C2988DF630045362C /* Poliquicks */,
 				96606D3E2988DF650045362C /* PoliquicksTests */,
 				96606D482988DF650045362C /* PoliquicksUITests */,
@@ -96,8 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				96606D2D2988DF630045362C /* PoliquicksApp.swift */,
-				96606D2F2988DF630045362C /* ContentView.swift */,
-				96606D312988DF650045362C /* Assets.xcassets */,
+				96BD637A2988E5C7000CFCF7 /* Resources */,
+				96BD63792988E5B2000CFCF7 /* Extensions */,
+				96BD63782988E5A9000CFCF7 /* ViewModels */,
+				96BD63772988E58D000CFCF7 /* Models */,
+				96BD63762988E584000CFCF7 /* Views */,
+				96BD63712988E35E000CFCF7 /* Info.plist */,
 				96606D332988DF650045362C /* Poliquicks.entitlements */,
 				96606D342988DF650045362C /* Preview Content */,
 			);
@@ -127,6 +137,44 @@
 				96606D4B2988DF650045362C /* PoliquicksUITestsLaunchTests.swift */,
 			);
 			path = PoliquicksUITests;
+			sourceTree = "<group>";
+		};
+		96BD63762988E584000CFCF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96BD63722988E442000CFCF7 /* LoginView.swift */,
+				96606D2F2988DF630045362C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		96BD63772988E58D000CFCF7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		96BD63782988E5A9000CFCF7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		96BD63792988E5B2000CFCF7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		96BD637A2988E5C7000CFCF7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				96606D312988DF650045362C /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BD63752988E541000CFCF7 /* Launch Screen.storyboard in Resources */,
 				96606D362988DF650045362C /* Preview Assets.xcassets in Resources */,
 				96606D322988DF650045362C /* Assets.xcassets in Resources */,
 			);
@@ -259,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BD63732988E442000CFCF7 /* LoginView.swift in Sources */,
 				96606D302988DF630045362C /* ContentView.swift in Sources */,
 				96606D2E2988DF630045362C /* PoliquicksApp.swift in Sources */,
 			);
@@ -419,16 +469,18 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Poliquicks/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -457,16 +509,18 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Poliquicks/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeRight UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
