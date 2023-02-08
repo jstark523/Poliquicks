@@ -1,0 +1,19 @@
+//
+//  Development.xcconfig
+//  Poliquicks
+//
+//  Created by Jason Starkman on 2/8/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//APP Settings
+APP_NAME = Poliquicks
+APP_BUNDLE_ID = JStark.Poliquicks
+
+//Google Civic APIKey
+API_KEY = AIzaSyBo_88Nyzofg4sy7asYa9La5Pc8PDu0jcs
+
+//Google Base URL
+BASE_URL = /www.googleapis.com/civicinfo/v2/
