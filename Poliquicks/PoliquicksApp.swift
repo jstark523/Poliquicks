@@ -9,11 +9,13 @@ import SwiftUI
 
 @main
 struct PoliquicksApp: App {
+    @StateObject var dm = PoliquicksDataModel()
     @StateObject var csManager = ColorSchemeManager()
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            RepresentativeCardView()
                 .environmentObject(csManager)
+                .environmentObject(dm)
                 .onAppear{
                     csManager.applyColorScheme()
                 }

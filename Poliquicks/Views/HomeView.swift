@@ -13,7 +13,6 @@ struct HomeView: View {
         ZStack {
             NavigationView{
                 VStack{
-                    
                 }
                     .navigationViewStyle(.stack)
                     .navigationBarTitleDisplayMode(.inline)

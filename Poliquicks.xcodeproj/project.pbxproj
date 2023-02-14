@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		963B956A2996E26B007A57EB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B95692996E26B007A57EB /* APIService.swift */; };
 		96606D2E2988DF630045362C /* PoliquicksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D2D2988DF630045362C /* PoliquicksApp.swift */; };
 		96606D302988DF630045362C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D2F2988DF630045362C /* ContentView.swift */; };
 		96606D322988DF650045362C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96606D312988DF650045362C /* Assets.xcassets */; };
@@ -23,6 +24,10 @@
 		96BD639E29933457000CFCF7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD639D29933457000CFCF7 /* SettingsView.swift */; };
 		96BD63A029933529000CFCF7 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD639F29933529000CFCF7 /* HomeView.swift */; };
 		96BD63AD29942678000CFCF7 /* EnvSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD63AC29942678000CFCF7 /* EnvSetup.swift */; };
+		96BD63B4299440BC000CFCF7 /* RepStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96BD63B3299440BC000CFCF7 /* RepStruct.swift */; };
+		96CA032B29973D5A00E5AD98 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CA032A29973D5A00E5AD98 /* Global.swift */; };
+		96CA0333299B46D000E5AD98 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CA0332299B46D000E5AD98 /* FileManager+Extension.swift */; };
+		96CA0335299B471400E5AD98 /* PoliquicksDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96CA0334299B471400E5AD98 /* PoliquicksDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +48,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		963B95692996E26B007A57EB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		96606D2A2988DF630045362C /* Poliquicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poliquicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96606D2D2988DF630045362C /* PoliquicksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliquicksApp.swift; sourceTree = "<group>"; };
 		96606D2F2988DF630045362C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +71,10 @@
 		96BD639F29933529000CFCF7 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		96BD63A729941AAA000CFCF7 /* Development.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Development.xcconfig; sourceTree = "<group>"; };
 		96BD63AC29942678000CFCF7 /* EnvSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvSetup.swift; sourceTree = "<group>"; };
+		96BD63B3299440BC000CFCF7 /* RepStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepStruct.swift; sourceTree = "<group>"; };
+		96CA032A29973D5A00E5AD98 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		96CA0332299B46D000E5AD98 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		96CA0334299B471400E5AD98 /* PoliquicksDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliquicksDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +182,9 @@
 		96BD63772988E58D000CFCF7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				963B95692996E26B007A57EB /* APIService.swift */,
+				96BD63B3299440BC000CFCF7 /* RepStruct.swift */,
+				96CA032A29973D5A00E5AD98 /* Global.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				96BD639929933363000CFCF7 /* ColorSchemeManager.swift */,
+				96CA0334299B471400E5AD98 /* PoliquicksDataModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -188,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				96BD639B2993342C000CFCF7 /* UIWindow+Extension.swift */,
+				96CA0332299B46D000E5AD98 /* FileManager+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -332,14 +347,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				96BD63A029933529000CFCF7 /* HomeView.swift in Sources */,
+				96BD63B4299440BC000CFCF7 /* RepStruct.swift in Sources */,
+				96CA0335299B471400E5AD98 /* PoliquicksDataModel.swift in Sources */,
 				96BD639A29933363000CFCF7 /* ColorSchemeManager.swift in Sources */,
 				96BD639E29933457000CFCF7 /* SettingsView.swift in Sources */,
 				96BD63732988E442000CFCF7 /* LoginView.swift in Sources */,
+				96CA032B29973D5A00E5AD98 /* Global.swift in Sources */,
 				96BD639C2993342C000CFCF7 /* UIWindow+Extension.swift in Sources */,
 				96BD637C2988E950000CFCF7 /* RepresentativeCardView.swift in Sources */,
 				96606D302988DF630045362C /* ContentView.swift in Sources */,
 				96BD637E2988E961000CFCF7 /* DetailedRepresentativeView.swift in Sources */,
+				96CA0333299B46D000E5AD98 /* FileManager+Extension.swift in Sources */,
 				96606D2E2988DF630045362C /* PoliquicksApp.swift in Sources */,
+				963B956A2996E26B007A57EB /* APIService.swift in Sources */,
 				96BD63AD29942678000CFCF7 /* EnvSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
