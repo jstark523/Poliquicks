@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct PoliquicksApp: App {
+    
+    init(){
+        FirebaseApp.configure()
+    }
+    
     @StateObject var dm = PoliquicksDataModel()
     @StateObject var csManager = ColorSchemeManager()
     var body: some Scene {
