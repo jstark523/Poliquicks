@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		963B956A2996E26B007A57EB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B95692996E26B007A57EB /* APIService.swift */; };
+		965C5307299C199D009C2694 /* RepresentativeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C5306299C199D009C2694 /* RepresentativeCard.swift */; };
 		96606D2E2988DF630045362C /* PoliquicksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D2D2988DF630045362C /* PoliquicksApp.swift */; };
 		96606D302988DF630045362C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D2F2988DF630045362C /* ContentView.swift */; };
 		96606D322988DF650045362C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96606D312988DF650045362C /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		963B95692996E26B007A57EB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		965C5306299C199D009C2694 /* RepresentativeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeCard.swift; sourceTree = "<group>"; };
 		96606D2A2988DF630045362C /* Poliquicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poliquicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96606D2D2988DF630045362C /* PoliquicksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliquicksApp.swift; sourceTree = "<group>"; };
 		96606D2F2988DF630045362C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				963B95692996E26B007A57EB /* APIService.swift */,
 				96BD63B3299440BC000CFCF7 /* RepStruct.swift */,
 				96CA032A29973D5A00E5AD98 /* Global.swift */,
+				965C5306299C199D009C2694 /* RepresentativeCard.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				96CA0333299B46D000E5AD98 /* FileManager+Extension.swift in Sources */,
 				96606D2E2988DF630045362C /* PoliquicksApp.swift in Sources */,
 				963B956A2996E26B007A57EB /* APIService.swift in Sources */,
+				965C5307299C199D009C2694 /* RepresentativeCard.swift in Sources */,
 				96BD63AD29942678000CFCF7 /* EnvSetup.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -10,16 +10,23 @@ import SwiftUI
 struct RepresentativeCardView: View {
     @EnvironmentObject var dm: PoliquicksDataModel
     @State private var offices = [Office]()
+    @State private var officials = [Official]()
     @State private var apiService: APIService?
+    @State private var repIndex = 0
+    @State private var cards = [RepresentativeCard]()
 
     var body: some View {
-        NavigationView {
-            List(offices, id: \.self) { office in
-                Image("")
-                .frame(width: 130, height: 70)
-                .background(Color.gray)
-                Text(office.name)
-                    .bold()
+        NavigationStack {
+            VStack{
+                List(cards.reversed(), id: \.self) { card in
+                    Image("")
+                        .frame(width: 130, height: 70)
+                        .background(Color.gray)
+                    Text(card.office.name)
+                        .bold()
+                    Text(card.official.name)
+                        .bold()
+                }
             }
             .navigationTitle("Your Representatives")
         }
@@ -30,6 +37,10 @@ struct RepresentativeCardView: View {
                     let response: Welcome = try await service.getJSON()
                     FileManager.endcodeAndSave(objects: response, fileName: "response.json")
                     offices = response.offices
+                    officials = response.officials
+                    for index in 0...offices.count - 1 {
+                        cards.append(RepresentativeCard(office: offices[index], official: officials[index]))
+                    }
                 }
             } catch {
                 print("Error fetching data: \(error)")
