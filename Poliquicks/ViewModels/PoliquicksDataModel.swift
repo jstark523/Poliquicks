@@ -11,6 +11,7 @@ class PoliquicksDataModel:ObservableObject{
     @Published var userZip = "12203"
     @Published var toastText: String?
     @Published var repUrl = ""
+    @Published var loggedIn = false
     
     init(){
         repUrl = "https://" + EnvSetup.repBaseUrl + EnvSetup.repApiKey + "&address=" + userZip

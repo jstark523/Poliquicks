@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		963B956A2996E26B007A57EB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963B95692996E26B007A57EB /* APIService.swift */; };
 		965C5307299C199D009C2694 /* RepresentativeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C5306299C199D009C2694 /* RepresentativeCard.swift */; };
+		965C5309299C2745009C2694 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 965C5308299C2745009C2694 /* GoogleService-Info.plist */; };
+		965C530C299C282F009C2694 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 965C530B299C282F009C2694 /* FirebaseAuth */; };
+		965C530E299C282F009C2694 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 965C530D299C282F009C2694 /* FirebaseFirestore */; };
+		965C5311299C2934009C2694 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 965C5310299C2934009C2694 /* FirebaseAnalytics */; };
+		965C5314299C3357009C2694 /* FireBaseLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C5313299C3357009C2694 /* FireBaseLogin.swift */; };
 		96606D2E2988DF630045362C /* PoliquicksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D2D2988DF630045362C /* PoliquicksApp.swift */; };
 		96606D302988DF630045362C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96606D2F2988DF630045362C /* ContentView.swift */; };
 		96606D322988DF650045362C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96606D312988DF650045362C /* Assets.xcassets */; };
@@ -51,6 +56,8 @@
 /* Begin PBXFileReference section */
 		963B95692996E26B007A57EB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		965C5306299C199D009C2694 /* RepresentativeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeCard.swift; sourceTree = "<group>"; };
+		965C5308299C2745009C2694 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		965C5313299C3357009C2694 /* FireBaseLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseLogin.swift; sourceTree = "<group>"; };
 		96606D2A2988DF630045362C /* Poliquicks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poliquicks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96606D2D2988DF630045362C /* PoliquicksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoliquicksApp.swift; sourceTree = "<group>"; };
 		96606D2F2988DF630045362C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				965C530C299C282F009C2694 /* FirebaseAuth in Frameworks */,
+				965C530E299C282F009C2694 /* FirebaseFirestore in Frameworks */,
+				965C5311299C2934009C2694 /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,15 +114,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		965C530F299C2934009C2694 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		965C5312299C3342009C2694 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				963B95692996E26B007A57EB /* APIService.swift */,
+				965C5313299C3357009C2694 /* FireBaseLogin.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		96606D212988DF630045362C = {
 			isa = PBXGroup;
 			children = (
+				965C5308299C2745009C2694 /* GoogleService-Info.plist */,
 				96BD63A729941AAA000CFCF7 /* Development.xcconfig */,
 				96BD63742988E541000CFCF7 /* Launch Screen.storyboard */,
 				96606D2C2988DF630045362C /* Poliquicks */,
 				96606D3E2988DF650045362C /* PoliquicksTests */,
 				96606D482988DF650045362C /* PoliquicksUITests */,
 				96606D2B2988DF630045362C /* Products */,
+				965C530F299C2934009C2694 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				96606D2D2988DF630045362C /* PoliquicksApp.swift */,
+				965C5312299C3342009C2694 /* Tools */,
 				96BD637A2988E5C7000CFCF7 /* Resources */,
 				96BD63792988E5B2000CFCF7 /* Extensions */,
 				96BD63782988E5A9000CFCF7 /* ViewModels */,
@@ -184,7 +213,6 @@
 		96BD63772988E58D000CFCF7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				963B95692996E26B007A57EB /* APIService.swift */,
 				96BD63B3299440BC000CFCF7 /* RepStruct.swift */,
 				96CA032A29973D5A00E5AD98 /* Global.swift */,
 				965C5306299C199D009C2694 /* RepresentativeCard.swift */,
@@ -234,6 +262,11 @@
 			dependencies = (
 			);
 			name = Poliquicks;
+			packageProductDependencies = (
+				965C530B299C282F009C2694 /* FirebaseAuth */,
+				965C530D299C282F009C2694 /* FirebaseFirestore */,
+				965C5310299C2934009C2694 /* FirebaseAnalytics */,
+			);
 			productName = Poliquicks;
 			productReference = 96606D2A2988DF630045362C /* Poliquicks.app */;
 			productType = "com.apple.product-type.application";
@@ -306,6 +339,9 @@
 				Base,
 			);
 			mainGroup = 96606D212988DF630045362C;
+			packageReferences = (
+				965C530A299C282F009C2694 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 96606D2B2988DF630045362C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -323,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96BD63752988E541000CFCF7 /* Launch Screen.storyboard in Resources */,
+				965C5309299C2745009C2694 /* GoogleService-Info.plist in Resources */,
 				96606D362988DF650045362C /* Preview Assets.xcassets in Resources */,
 				96606D322988DF650045362C /* Assets.xcassets in Resources */,
 			);
@@ -359,6 +396,7 @@
 				96BD639C2993342C000CFCF7 /* UIWindow+Extension.swift in Sources */,
 				96BD637C2988E950000CFCF7 /* RepresentativeCardView.swift in Sources */,
 				96606D302988DF630045362C /* ContentView.swift in Sources */,
+				965C5314299C3357009C2694 /* FireBaseLogin.swift in Sources */,
 				96BD637E2988E961000CFCF7 /* DetailedRepresentativeView.swift in Sources */,
 				96CA0333299B46D000E5AD98 /* FileManager+Extension.swift in Sources */,
 				96606D2E2988DF630045362C /* PoliquicksApp.swift in Sources */,
@@ -724,6 +762,35 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		965C530A299C282F009C2694 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		965C530B299C282F009C2694 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 965C530A299C282F009C2694 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		965C530D299C282F009C2694 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 965C530A299C282F009C2694 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		965C5310299C2934009C2694 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 965C530A299C282F009C2694 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 96606D222988DF630045362C /* Project object */;
 }
