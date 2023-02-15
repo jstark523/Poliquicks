@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import Firebase
+import FirebaseCore
 
 @main
 struct PoliquicksApp: App {
@@ -19,7 +19,7 @@ struct PoliquicksApp: App {
     @StateObject var csManager = ColorSchemeManager()
     var body: some Scene {
         WindowGroup {
-            RepresentativeCardView()
+            LoginView()
                 .environmentObject(csManager)
                 .environmentObject(dm)
                 .onAppear{
